@@ -1,0 +1,25 @@
+<!--pages/mine/mine.wxml-->
+<view class="top-mode">
+  <view class='userinfo'>
+    <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
+    <label style="color:white">{{nickName}}</label>
+  </view>
+</view>
+<view class='go-center card-box'>
+  <view class='card-info'>
+      <view class='down-center' style='height:50%;border-bottom:1px solid #E3E3E3;'>
+        <i class="iconfont icon-youhuiquan" style="color:#FF9C35"></i>
+        <label style='font-size:15px;margin-left:15px'>我收到的支付返券</label>
+      </view>
+      <view class='down-center' style='height:50%'> 
+        <i class="iconfont icon-shouji" style="color:#B6D9A9"></i>
+        <label style='font-size:15px;margin-left:15px'>1380000678</label>
+      </view>
+  </view>
+</view>
+<view class="go-center" style='margin-top:80px;font-size:14px;color:blue;' bindtap='bitphone'>
+    <label style='border-bottom:1px solid blue'>客服电话：123-456-7890</label>
+</view>
+<view class='go-center' style='margin-top:10px'>
+  <label style='font-size:12px;color:#E2E2E2'>[服务时间 周一至周五 9:00-19:00]</label>
+</view>

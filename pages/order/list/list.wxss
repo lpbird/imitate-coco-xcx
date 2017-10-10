@@ -1,0 +1,29 @@
+/* pages/order/list/list.wxss */
+.active-color{
+  background: #FF9C35;
+}
+.unactive-color{
+  background: #999999;
+}
+.start-btn{
+  width:100px;
+  height:30px;
+  background:#F14C66;
+  font-size:14px;
+  color:white;
+}
+.note-btn{
+  font-size:14px;
+  color:grey;
+  margin-top:30px
+}
+.dindgan-i{
+  font-size:100px;
+  color:grey;
+}
+.tab-box{
+  width:50%;
+  display:flex;
+  font-size:14px;
+  color:white
+}

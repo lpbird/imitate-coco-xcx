@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view>
+<!-- 顶部轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 操作按钮 -->
+  <view class='btn-bar'>
+    <view class='btn-block' bindtap='golist'>
+      <view class="btn_op1">开始订餐</view>
+    </view>
+    <view class='btn-block'>
+      <view class="btn_op2">预约订餐</view>
+    </view>
+  </view>
+  <!-- 中部广告 -->
+  <view class="ad-box">
+    <image src='../../images/2-1.jpg' class="image_ad"></image>
+  </view>
+  <!-- 底部横向滑动box -->
+  <view class='bottom-box'>
+    <scroll-view scroll-x="true" class="scroll-box">
+      <view class='slide-inline-box'>
+        <image src='../../images/bottom_1.png' class='bottom-image'></image>
+      </view>
+      <view class='slide-inline-box'>
+        <image src='../../images/bottom_2.png' class='bottom-image'></image>
+      </view>
+      <view class='slide-inline-box'>
+        <image src='../../images/bottom_3.png' class='bottom-image'></image>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/order/list/list.wxml-->
+<view>
+   <view class='go-center' style='margin-top:10px'>
+      <view class='tab-box'>
+        <view  bindtap='changeTab' data-index="0" class="go-center {{tabIndex==0?'active-color':'unactive-color'}}"  style='width:50%'>即时订单</view>
+        <view bindtap='changeTab' data-index="1" class="go-center {{tabIndex==1?'active-color':'unactive-color'}}" style='width:50%'>预约订单</view>
+      </view>
+   </view>
+   <view class='go-center' style="margin-top:100px">
+      <i class="iconfont icon-dingdan dindgan-i" ></i>
+   </view>
+   <view class='go-center note-btn'>目前没有即时订单</view>
+   <view class='go-center' style='margin-top:20px' >
+     <view class='go-center down-center start-btn' bindtap='golist'>开始点餐</view>
+   </view>
+</view>
